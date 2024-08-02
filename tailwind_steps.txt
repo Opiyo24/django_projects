@@ -1,0 +1,47 @@
+Install python
+Install node
+Create a virtual environment
+configure django with tailwind
+    django-tailwind.readthedocs.io
+
+Get into virtual environment
+    source themes/scripts/activate
+
+    pip install django
+    pip install django-tailwind
+
+Start a new project
+
+CONFIGURATION
+Add tailwind to installed apps in django settings
+Create a tailwindcss compartible apps
+    python manage.py tailwind init
+
+Add tailwind app to settings file
+Register Tailwind app in settings file
+
+Add internal IPs lit to settings file
+    INTERNAL_IPS = [
+        "127.0.0.1",
+    ]
+
+Add npm location in settings file
+{cmd} where npm
+    NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+
+Install tailwind css dependencies
+    python manage.py tailwind install
+
+Run 
+    pip install django-browser-reload
+
+Add django browser reload to installed apps
+    'django_browser_reload'
+
+Add prescribed middleware
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
+
+Include prescribed path in urls file
+
+Run 
+    python manage.py tailwind start
